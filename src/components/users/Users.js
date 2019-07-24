@@ -27,7 +27,7 @@ export class Users extends Component {
     render() {
         return (
             <div style={userStyle}>
-                {this.state.users.map(user => (
+                {this.props.users.map(user => (
                     <UserItem key={user.id} user={user} />
                 ))}
             </div>
